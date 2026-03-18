@@ -1,14 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 nav {
@@ -30,7 +23,6 @@ main {
 
 h1 {
     color: #004080;
-    text-align: center;
 }
 
 p {
@@ -46,12 +38,12 @@ main img {
 }
 
 aside {
-    width: 300px;
-    margin: 20px;
+    width: 20em;
+    margin: 1em;
     border: 1px solid #333;
     padding: 10px;
-    background-color: #e6f0ff;
-    color: #000;
+    background-color: #224881;
+    color: #000000;
 }
 
 aside img {
@@ -60,7 +52,12 @@ aside img {
 }
 
 footer {
-    margin-top: 20px;
+    width: 60%;
+    margin: 1em auto;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+footer p {
+    margin: 0;
 }
