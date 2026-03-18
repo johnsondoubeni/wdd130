@@ -39,24 +39,26 @@ main img {
 
 aside {
 
-    aside {
-        width: 60%;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #000;
-        text-align: center;
-    }
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
 
-    aside img {
-        width: 200px;
-        height: auto;
-        display: block;
-        margin: 10px auto;
-    }
+}
 
-    aside p {
-        text-align: justify;
-    }
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+aside p {
+    text-align: justify;
+}
 }
 
 aside img {
