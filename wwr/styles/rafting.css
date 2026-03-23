@@ -1,0 +1,133 @@
+/* defaulting section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body section */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* header section */
+header {
+    background-color: #b7a8d8;
+    padding: 20px;
+}
+
+/* logo */
+header img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* navigation */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* HERO SECTION (FIXED HERE) */
+/* ========================= */
+
+.hero {
+    position: relative;
+    /* 🔥 KEY CHANGE */
+    margin: 20px;
+}
+
+/* main hero image ONLY */
+.hero > img {
+    width: 100%;
+    display: block;
+}
+
+/* title overlay bar */
+.hero h1 {
+    position: absolute;
+    /* 🔥 overlay */
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 50, 60, 0.7);
+    color: white;
+    padding: 15px;
+}
+
+/* yellow floating box */
+.hero article {
+    position: absolute;
+    /* 🔥 overlay */
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e6c36a;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* article text */
+.hero article p {
+    flex: 2;
+    text-align: left;
+}
+
+/* small image (right side) */
+.hero article img {
+    width: 120px;
+    border: 3px solid #fff;
+}
+
+/* ========================= */
+/* OTHER SECTIONS (UNCHANGED STYLE) */
+/* ========================= */
+
+/* history section */
+.history {
+    border: 2px solid #999;
+    margin: 20px;
+    padding: 20px;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* adventure section */
+.adventure {
+    border: 2px solid #999;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* footer section */
+footer {
+    background-color: #b7a8d8;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* social icons */
+.social img {
+    width: 30px;
+    margin-left: 10px;
+}
