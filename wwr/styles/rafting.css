@@ -36,13 +36,8 @@ nav a {
     text-decoration: underline;
 }
 
-/* ========================= */
-/* HERO SECTION (FIXED HERE) */
-/* ========================= */
-
 .hero {
     position: relative;
-    /* 🔥 KEY CHANGE */
     margin: 20px;
 }
 
@@ -55,7 +50,6 @@ nav a {
 /* title overlay bar */
 .hero h1 {
     position: absolute;
-    /* 🔥 overlay */
     top: 20px;
     width: 100%;
     text-align: center;
@@ -64,10 +58,10 @@ nav a {
     padding: 15px;
 }
 
-/* yellow floating box */
+/* yellow floating box and overlay */
 .hero article {
     position: absolute;
-    /* 🔥 overlay */
+
     top: 110px;
     left: 50%;
     transform: translateX(-50%);
@@ -91,10 +85,6 @@ nav a {
     width: 120px;
     border: 3px solid #fff;
 }
-
-/* ========================= */
-/* OTHER SECTIONS (UNCHANGED STYLE) */
-/* ========================= */
 
 /* history section */
 .history {
