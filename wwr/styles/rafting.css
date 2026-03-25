@@ -11,197 +11,152 @@
     --secondary-color: #e6c36a;
     --light-color: #ffffff;
     --dark-color: #000000;
+}
 
-    /* header background area */
+/* header */
+header {
+    background-color: var(--primary-color);
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+/* hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* hero title */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--light-color);
+    background-color: rgba(0, 50, 60, 0.7);
+    padding: 15px;
+    font-size: 2rem;
+}
+
+/* hero article */
+.hero article {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    right: 50px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 3px solid #caa84c;
+}
+
+/* article image */
+.hero article img {
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+}
+
+/* history */
+.history {
+    padding: 20px;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+}
+
+.history p {
+    margin-bottom: 10px;
+}
+
+/* adventure */
+.adventure {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* social media */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    border: 1px solid #333;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+
     header {
-        background-color: #b7a8d8;
-        border: 1px solid #333;
-        padding: 20px;
+        text-align: center;
     }
 
-    /* for the hero section */
-    .hero {
-        position: relative;
-    }
-
-    .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* setting hero text over image */
     .hero h1 {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        color: var(--light-color);
-        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 18px;
         padding: 10px;
     }
 
-    /* hero container */
-    .hero {
-        position: relative;
-    }
-
-    /* section on main hero image */
-    .hero img:first-child {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* this is for the title bar */
-    .hero h1 {
-        position: absolute;
-        top: 20px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        color: white;
-        background-color: rgba(0, 50, 60, 0.7);
-        padding: 15px;
-        font-size: 2rem;
-    }
-
-    /* article box area */
     .hero article {
-        position: absolute;
-        top: 100px;
-        left: 50px;
-        right: 50px;
-        background-color: #e6c36a;
-        padding: 20px;
-        border: 3px solid #caa84c;
+        position: static;
+        margin: 10px;
     }
 
-    /* small image inside article */
     .hero article img {
-        float: right;
-        width: 120px;
-        margin-left: 15px;
+        float: none;
+        display: block;
+        margin: 10px auto;
     }
 
-    /* history section */
-    .history {
-        padding: 20px;
-    }
-
-    .history h2 {
-        margin-bottom: 10px;
-    }
-
-    .history p {
-        margin-bottom: 10px;
-    }
-
-    /* adventure section */
-    .adventure {
-        padding: 20px;
-        background-color: #f4f4f4;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    .gallery img {
-        width: 90%;
-        height: 90%;
-    }
-
-    /* required: socialmedia nav */
-    .socialmedia {
-        margin-top: 10px;
-    }
-
-    /* required: remove underline */
-    .socialmedia a {
-        text-decoration: none;
-        margin: 0 10px;
-    }
-
-    .socialmedia img {
-        width: 30px;
-    }
-
-    /* mobile responsiveness */
-    @media (max-width: 768px) {
-
-        header {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        nav ul {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .hero h1 {
-            font-size: 18px;
-        }
-
-        .hero article {
-            position: static;
-            margin: 10px;
-        }
-
-        .hero article img {
-            float: none;
-            display: block;
-            margin: 10px auto;
-        }
-    }
-
-    /* footer container */
-    /* sending  text center-ish , icons to the right */
     footer {
-        background-color: #b7a8d8;
-        border: 1px solid #333;
-        padding: 20px;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    /* footer text */
-    footer p {
-        flex: 1;
-        text-align: center;
-    }
-
-    /* social icons container */
-    .socialmedia {
-        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
-
-    /* remove underline */
-    .socialmedia a {
-        text-decoration: none;
-    }
-
-    /* icon size */
-    .socialmedia img {
-        width: 35px;
-    }
-
-    h1,
-    h2,
-    h3 {
-        text-align: center;
-    }
-
-    /* hero title maintains center correct */
-    .hero h1 {
-        text-align: center;
-    }
-
 }
