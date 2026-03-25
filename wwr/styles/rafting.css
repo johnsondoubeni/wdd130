@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* css variables */
+/* variables */
 :root {
     --primary-color: #b7a8d8;
     --secondary-color: #e6c36a;
@@ -21,7 +21,7 @@
         padding: 20px;
     }
 
-    /* hero section */
+    /* for the hero section */
     .hero {
         position: relative;
     }
@@ -32,7 +32,7 @@
         display: block;
     }
 
-    /* hero text over image */
+    /* setting hero text over image */
     .hero h1 {
         position: absolute;
         top: 20px;
@@ -47,14 +47,14 @@
         position: relative;
     }
 
-    /* main hero image */
+    /* section on main hero image */
     .hero img:first-child {
         width: 100%;
         height: auto;
         display: block;
     }
 
-    /* title bar */
+    /* this is for the title bar */
     .hero h1 {
         position: absolute;
         top: 20px;
@@ -67,7 +67,7 @@
         font-size: 2rem;
     }
 
-    /* article box */
+    /* article box area */
     .hero article {
         position: absolute;
         top: 100px;
@@ -161,6 +161,7 @@
     }
 
     /* footer container */
+    /* sending  text center-ish , icons to the right */
     footer {
         background-color: #b7a8d8;
         border: 1px solid #333;
@@ -169,7 +170,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* pushes text center-ish & icons right */
+
     }
 
     /* footer text */
@@ -201,7 +202,7 @@
         text-align: center;
     }
 
-    /* ensure hero title remains correct */
+    /* hero title maintains center correct */
     .hero h1 {
         text-align: center;
     }
