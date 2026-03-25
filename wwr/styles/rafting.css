@@ -15,9 +15,7 @@
     /* header background area */
     header {
         background-color: #b7a8d8;
-        /* light purple from image */
         border: 1px solid #333;
-        /* thin dark border */
         padding: 20px;
     }
 
@@ -195,7 +193,6 @@
         width: 35px;
     }
 
-    /* center headings (your requested change) */
     h1,
     h2,
     h3 {
