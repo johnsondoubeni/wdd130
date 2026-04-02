@@ -7,10 +7,10 @@
 
 /* variables */
 :root {
-    --primary-color: #b7a8d8;
-    --secondary-color: #e6c36a;
-    --light-color: #ffffff;
-    --dark-color: #000000;
+    --primary-color: thistle;
+    --secondary-color: khaki;
+    --light-color: white;
+    --dark-color: black;
 }
 
 /* global */
@@ -35,7 +35,6 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 0;
-
 }
 
 nav a {
@@ -54,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: lightgray;
 }
 
 /* hero section */
@@ -76,7 +75,8 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
     color: var(--light-color);
-    background-color: rgba(0, 50, 60, 0.7);
+    background-color: darkslategray;
+    /* unchanged */
     padding: 15px;
     font-size: 2rem;
 }
@@ -115,7 +115,7 @@ nav ul li a:hover {
 /* adventure */
 .adventure {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: whitesmoke;
 }
 
 /* gallery */
@@ -203,7 +203,6 @@ h3 {
         flex-direction: column;
         gap: 10px;
     }
-
 }
 
 /* on the section of history*/
