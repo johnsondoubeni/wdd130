@@ -19,18 +19,23 @@ body {
     color: var(--dark-color);
 }
 
-/* header */
+/* header (FIXED TO GRID) */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
     padding: 20px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
 }
 
 /* navigation */
+nav {
+    justify-self: end;
+    /* pushes nav to right */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -67,7 +72,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* hero title */
+/* hero title (FIXED TRANSPARENCY) */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -75,8 +80,7 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
     color: var(--light-color);
-    background-color: darkslategray;
-    /* unchanged */
+    background-color: rgba(0, 50, 60, 0.7);
     padding: 15px;
     font-size: 2rem;
 }
@@ -112,13 +116,27 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* history layout */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
 /* adventure */
 .adventure {
     padding: 20px;
     background-color: whitesmoke;
 }
 
-/* gallery */
+/* gallery (FIXED IMAGE SCALING) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -127,8 +145,12 @@ nav ul li a:hover {
 }
 
 .gallery img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
 }
 
 /* social media */
@@ -173,9 +195,14 @@ h3 {
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        /* FIXED for grid */
         text-align: center;
         gap: 10px;
+    }
+
+    nav {
+        justify-self: center;
     }
 
     nav ul {
@@ -203,20 +230,4 @@ h3 {
         flex-direction: column;
         gap: 10px;
     }
-}
-
-/* on the section of history*/
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
-    align-items: center;
-    margin-top: 15px;
-}
-
-/* my centered image */
-.history-content img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
