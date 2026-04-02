@@ -5,12 +5,14 @@
     box-sizing: border-box;
 }
 
-/* variables */
+/* variables (STANDARDIZED COLORS) */
 :root {
-    --primary-color: thistle;
-    --secondary-color: khaki;
-    --light-color: white;
-    --dark-color: black;
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
 }
 
 /* global */
@@ -19,7 +21,7 @@ body {
     color: var(--dark-color);
 }
 
-/* header (FIXED TO GRID) */
+/* header */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -33,7 +35,6 @@ header {
 /* navigation */
 nav {
     justify-self: end;
-    /* pushes nav to right */
 }
 
 nav ul {
@@ -50,7 +51,7 @@ nav a {
 
 nav ul li a {
     display: inline-block;
-    background-color: white;
+    background-color: var(--light-color);
     padding: 10px 20px;
     border: 2px solid var(--dark-color);
     text-decoration: none;
@@ -58,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: lightgray;
+    background-color: var(--hover-color);
 }
 
 /* hero section */
@@ -72,7 +73,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* hero title (FIXED TRANSPARENCY) */
+/* hero title */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -133,10 +134,9 @@ nav ul li a:hover {
 /* adventure */
 .adventure {
     padding: 20px;
-    background-color: whitesmoke;
+    background-color: var(--background-light);
 }
 
-/* gallery (FIXED IMAGE SCALING) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -145,8 +145,8 @@ nav ul li a:hover {
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+    width: 95%;
+    height: 95%;
 }
 
 figure {
@@ -196,7 +196,6 @@ h3 {
 
     header {
         grid-template-columns: 1fr;
-        /* FIXED for grid */
         text-align: center;
         gap: 10px;
     }
