@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 /* navigation */
@@ -188,5 +189,49 @@ h3 {
     footer {
         flex-direction: column;
         gap: 10px;
+    }
+
+    /*  */
+
+    /* remove bullets + horizontal layout */
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* MAKING EACH LINK A BOX */
+    nav ul li a {
+        display: inline-block;
+        /* 🔥 important */
+        background-color: white;
+        /* white box */
+        padding: 10px 20px;
+        /* space inside box */
+        border: 2px solid #2ba840;
+        /* border around each */
+        border-radius: 5px;
+        /* optional rounded corners */
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    /* hover effect */
+    nav ul li a:hover {
+        background-color: #eee;
+    }
+
+    nav ul {
+        gap: 0;
+    }
+
+    nav ul li a {
+        border-right: none;
+    }
+
+    nav ul li:last-child a {
+        border-right: 2px solid #333333;
     }
 }
