@@ -5,36 +5,79 @@
     box-sizing: border-box;
 }
 
-/* Main container */
+/* Page */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
 main {
-    max-width: 500px;
-    margin: 1rem;
-    border: 1px rgba(0, 0, 0, 0.47);
-    padding: 1rem;
-    background-color:
-        rgb(22, 25, 25);
-    color: black
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
+/* Title */
 h1 {
-    margin: 1rem;
-    color: white;
-
+    font-size: 1.5rem;
+    color: navy;
+    margin-bottom: 1rem;
 }
 
+/* Form box */
 form {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%) padding: 1rem;
-    background-color: #ddd
+    background-color: #e6e6e6;
+    padding: 1.5rem;
+    border-radius: 6px;
 }
 
+/* Each question */
+.quiz-item {
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Code block */
 code {
     display: block;
-    background-color: rgb(25, 25, 25);
-    color: white
+    margin: 10px auto;
+    /* center  the width of  box */
+    width: fit-content;
+    /* prevents full width */
+    padding: 10px;
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 5px;
 }
 
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%) padding: 1rem;
+/* Button */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000066;
 }
