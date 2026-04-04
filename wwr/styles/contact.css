@@ -1,0 +1,199 @@
+/* universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables (STANDARDIZED COLORS) */
+:root {
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
+}
+
+/* global */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-color);
+}
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+/* navigation */
+nav {
+    justify-self: end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* CONTACT HEADER */
+.contact-header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* CONTACT CONTENT */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--hover-color);
+}
+
+/* TEAM SECTION */
+.team {
+    margin: 20px;
+    border: 2px solid var(--dark-color);
+    padding: 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.team-grid img {
+    width: 100px;
+    height: 100px;
+}
+
+/* social media */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        justify-self: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
