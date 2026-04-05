@@ -30,7 +30,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
 
         <!-- CONTACT HEADER -->
@@ -55,25 +54,43 @@
             <!-- FORM -->
             <form class="contact-form">
 
+                <!-- TEXT INPUT -->
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Placeholder" required>
+                <input type="text" id="name" name="name" placeholder="Placeholder" required>
 
+                <!-- EMAIL INPUT -->
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Placeholder" required>
+                <input type="email" id="email" name="email" placeholder="Placeholder" required>
 
+                <!-- RADIO BUTTONS -->
                 <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" required> General Inquiry</label>
-                <label><input type="radio" name="purpose"> Reservation Question</label>
-                <label><input type="radio" name="purpose"> Website Suggestion</label>
 
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <!-- TEXTAREA -->
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Type here" required></textarea>
+                <textarea id="message" name="message" placeholder="Type here" required></textarea>
 
-                <label>
-                    <input type="checkbox">
+                <!-- CHECKBOX -->
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please Subscribe me to the monthly newsletter
                 </label>
 
+                <!-- BUTTON -->
                 <button type="submit">Get in Touch!</button>
 
             </form>
