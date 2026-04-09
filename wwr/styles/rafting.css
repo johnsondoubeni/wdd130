@@ -1,11 +1,9 @@
-/* universal reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* variables (STANDARDIZED COLORS) */
 :root {
     --primary-color: rgb(183, 168, 216);
     --secondary-color: rgb(230, 195, 106);
@@ -15,13 +13,14 @@
     --background-light: rgb(245, 245, 245);
 }
 
-/* global */
 body {
     font-family: Arial, sans-serif;
     color: var(--dark-color);
 }
 
-/* header */
+/* ================================
+   HEADER (HTML: header → img → nav)
+================================ */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -32,7 +31,7 @@ header {
     align-items: center;
 }
 
-/* navigation */
+/* NAVIGATION */
 nav {
     justify-self: right;
 }
@@ -60,20 +59,26 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* headings */
+/* ================================
+   HEADINGS (used across sections)
+================================ */
 h1,
 h2,
 h3 {
     text-align: center;
 }
 
-/* CONTACT HEADER */
+/* ================================
+   CONTACT HEADER SECTION
+================================ */
 .contact-header {
     text-align: center;
     padding: 20px;
 }
 
-/* CONTACT CONTENT */
+/* ================================
+   CONTACT CONTENT SECTION
+================================ */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,25 +104,28 @@ h3 {
 .contact-form textarea {
     padding: 8px;
     border: 1px solid rgb(204, 204, 204);
-    /* FIXED */
 }
 
 .contact-form textarea {
     height: 100px;
 }
 
-.contact-form button {
-    padding: 10px;
-    background-color: var(--primary-color);
-    border: none;
-    cursor: pointer;
+/* RADIO BUTTON ALIGNMENT FIX */
+/* RADIO BUTTON ALIGNMENT FIX */
+.contact-form input[type="radio"] {
+    margin-right: 6px;
 }
 
-.contact-form button:hover {
-    background-color: var(--hover-color);
+.contact-form label[for="general"],
+.contact-form label[for="reservation"],
+.contact-form label[for="suggestion"] {
+    display: inline;
+    margin-right: 15px;
 }
 
-/* TEAM SECTION */
+/* ================================
+   TEAM SECTION
+================================ */
 .team {
     margin: 20px;
     border: 2px solid var(--dark-color);
@@ -136,22 +144,9 @@ h3 {
     height: 100px;
 }
 
-/* social media */
-.socialmedia {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
-}
-
-/* footer */
+/* ================================
+   FOOTER (HTML: footer → p → nav.socialmedia)
+================================ */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -167,7 +162,24 @@ footer p {
     text-align: center;
 }
 
-/* responsive */
+/* SOCIAL MEDIA (inside footer nav) */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
 
     header {
