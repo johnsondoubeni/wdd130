@@ -18,9 +18,23 @@ nav {
     background-color: steelblue;
     padding: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    /* move items to the end */
     align-items: center;
     list-style: none;
+}
+
+nav ul {
+    display: flex;
+    /* make li items horizontal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+    /* spacing between items */
 }
 
 nav a {
@@ -29,8 +43,7 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    color: white;
-
+    color: rgb(247, 243, 249);
 }
 
 h1 {
