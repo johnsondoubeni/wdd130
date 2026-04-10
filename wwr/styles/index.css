@@ -350,3 +350,125 @@ footer p {
         flex-direction: column;
     }
 }
+
+/* =============================
+============================ */
+
+/* ================= MOBILE & TABLET OPTIMIZATION ================= */
+
+/* GENERAL FIX */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HERO FIX */
+@media (max-width: 768px) {
+
+    .hero {
+        height: auto;
+        min-height: unset;
+        padding: 4rem 1rem;
+    }
+
+    .hero-content {
+        position: static;
+        transform: none;
+        top: auto;
+        padding: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+/* NAVIGATION FIX */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* IMAGE SECTION FIX */
+@media (max-width: 768px) {
+
+    .image-section .image-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-section .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* BENEFITS & FEATURES FIX */
+@media (max-width: 768px) {
+
+    .benefits,
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-card,
+    .feature-card {
+        width: 90%;
+    }
+}
+
+/* SIGNUP FIX */
+@media (max-width: 768px) {
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .signup-form input {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+}
+
+/* FOOTER FIX */
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialmedia {
+        justify-content: center;
+    }
+}
+
+/* TABLET OPTIMIZATION */
+@media (max-width: 1024px) {
+
+    .image-section .image-container img {
+        width: 48%;
+    }
+
+    .benefits,
+    .features {
+        flex-wrap: wrap;
+    }
+}
