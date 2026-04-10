@@ -461,10 +461,10 @@ img {
 }
 
 /* TABLET OPTIMIZATION */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
     .image-section .image-container img {
-        width: 48%;
+        width: 40%;
     }
 
     .benefits,
