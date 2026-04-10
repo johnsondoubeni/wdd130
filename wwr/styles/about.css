@@ -1,82 +1,35 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ================= ABOUT PAGE ================= */
 
-/* ROOT */
+/* variables (STANDARDIZED COLORS) */
 :root {
-    --primary-color: #b7a8d8;
-    --dark-green: #2f4f4f;
-    --border: 2px solid black;
-    /* added */
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
 }
 
 /* BODY */
-body {
-    font-family: Arial, sans-serif;
+.about-page {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* ================= HEADER ================= */
-header {
-    display: grid;
-    grid-template-columns: 120px 1fr;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 1rem;
-    border: var(--border);
-    /* added */
-}
-
-header img {
-    width: 100px;
-}
-
-/* NAV */
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-nav li {
-    border: var(--border);
-    /* updated */
-}
-
-nav a {
-    display: block;
-    padding: 10px 18px;
-    background-color: #eee;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border: var(--border);
-    /* added */
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
 /* ================= HERO ================= */
-.hero {
+.about-page .hero {
     position: relative;
     margin-top: 10px;
     border: var(--border);
-
 }
 
-.hero img {
+.about-page .hero img {
     width: 100%;
     display: block;
 }
 
 /* TITLE BAR */
-.hero h1 {
+.about-page .hero h1 {
     position: absolute;
     top: 20px;
     left: 0;
@@ -87,11 +40,10 @@ nav a:hover {
     padding: 12px 0;
     font-size: 1.8rem;
     border: var(--border);
-    /* added */
 }
 
 /* MISSION BOX */
-.hero article {
+.about-page .hero article {
     position: absolute;
     top: 90px;
     left: 40px;
@@ -107,32 +59,30 @@ nav a:hover {
     align-items: center;
 }
 
-.hero article h2 {
+.about-page .hero article h2 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.hero article p {
+.about-page .hero article p {
     grid-column: 1 / 2;
 }
 
-.hero article img {
+.about-page .hero article img {
     width: 100%;
     border: var(--border);
-
 }
 
 /* ================= HISTORY ================= */
-.history {
+.about-page .history {
     margin: 20px 10px;
     padding: 20px;
     border: var(--border);
-    /* updated */
     text-align: center;
     background-color: #eee;
 }
 
-.history-content {
+.about-page .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
     gap: 20px;
@@ -140,57 +90,78 @@ nav a:hover {
     margin-top: 15px;
 }
 
-.history-content img {
+.about-page .history-content img {
     width: 100%;
     border: var(--border);
-    /* added */
 }
 
 /* ================= ADVENTURE ================= */
-.adventure {
+.about-page .adventure {
     margin: 20px 10px;
     padding: 20px;
     border: var(--border);
-    /* updated */
     text-align: center;
     background-color: #ddd;
 }
 
-.gallery {
+.about-page .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     margin-top: 15px;
 }
 
-.gallery img {
+.about-page .gallery img {
     width: 100%;
     border: var(--border);
-    height: 90%
+    height: 90%;
 }
 
-figcaption {
+.about-page figcaption {
     font-size: 0.8rem;
     margin-top: 5px;
 }
 
-/* ================= FOOTER ================= */
-/* social media */
-.socialmedia {
+/* ================= HEADER ================= */
+header {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    justify-self: right;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
 }
 
-.socialmedia a {
+nav a {
     text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
 }
 
-.socialmedia img {
-    width: 35px;
+nav ul li a {
+    display: inline-block;
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
 }
 
-/* footer */
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+/* ================= FOOTER ================= */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -204,4 +175,19 @@ footer {
 footer p {
     flex: 1;
     text-align: center;
+}
+
+/* ================= SOCIAL MEDIA ================= */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
 }

@@ -1,26 +1,91 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= CONTACT PAGE ================= */
+
+/* CONTACT HEADER */
+.contact-page .contact-header {
+    text-align: center;
+    padding: 20px;
 }
 
-:root {
-    --primary-color: rgb(183, 168, 216);
-    --secondary-color: rgb(230, 195, 106);
-    --light-color: rgb(255, 255, 255);
-    --dark-color: rgb(0, 0, 0);
-    --hover-color: rgb(211, 211, 211);
-    --background-light: rgb(245, 245, 245);
+/* CONTACT CONTENT */
+.contact-page .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: var(--dark-color);
+/* MAP */
+.contact-page .map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
 }
 
-/* 
-   HEADER (HTML: header → img → nav)
- */
+/* FORM */
+.contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.contact-page .contact-form textarea {
+    height: 100px;
+}
+
+/* RADIO */
+.contact-page .contact-form input[type="radio"] {
+    margin-right: 6px;
+}
+
+.contact-page label[for="general"],
+.contact-page label[for="reservation"],
+.contact-page label[for="suggestion"] {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* TEAM */
+.contact-page .team {
+    margin: 20px;
+    border: 2px solid var(--dark-color);
+    padding: 20px;
+}
+
+.contact-page .team h2 {
+    text-align: center;
+}
+
+.contact-page .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.contact-page .team-grid img {
+    width: 100px;
+    height: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .contact-page .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================= HEADER ================= */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -31,7 +96,7 @@ header {
     align-items: center;
 }
 
-/* NAVIGATION */
+/* ================= NAVIGATION ================= */
 nav {
     justify-self: right;
 }
@@ -59,94 +124,7 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* 
-   HEADINGS (I am using this across sections)
- */
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
-/* 
-   CONTACT HEADER SECTION
- */
-.contact-header {
-    text-align: center;
-    padding: 20px;
-}
-
-/* 
-   CONTACT CONTENT SECTION
- */
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* MAP */
-.map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-
-/* FORM */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 8px;
-    border: 1px solid rgb(204, 204, 204);
-}
-
-.contact-form textarea {
-    height: 100px;
-}
-
-/* RADIO BUTTON ALIGNMENT  */
-
-.contact-form input[type="radio"] {
-    margin-right: 6px;
-}
-
-.contact-form label[for="general"],
-.contact-form label[for="reservation"],
-.contact-form label[for="suggestion"] {
-    display: inline;
-    margin-right: 15px;
-}
-
-/* 
-   TEAM SECTION
- */
-.team {
-    margin: 20px;
-    border: 2px solid var(--dark-color);
-    padding: 20px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    text-align: center;
-}
-
-.team-grid img {
-    width: 100px;
-    height: 100px;
-}
-
-/* 
-   FOOTER (HTML: footer → p → nav.socialmedia)
- */
+/* ================= FOOTER ================= */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -162,7 +140,7 @@ footer p {
     text-align: center;
 }
 
-/* SOCIAL MEDIA (inside footer nav) */
+/* ================= SOCIAL MEDIA ================= */
 .socialmedia {
     display: flex;
     gap: 10px;
@@ -177,36 +155,12 @@ footer p {
     width: 35px;
 }
 
-/* 
-   RESPONSIVE
- */
-@media (max-width: 768px) {
-
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 10px;
-    }
-
-    nav {
-        justify-self: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* variables (STANDARDIZED COLORS) */
+:root {
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
 }

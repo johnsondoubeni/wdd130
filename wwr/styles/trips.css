@@ -1,27 +1,154 @@
-/* universal reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ================= TRIPS PAGE ================= */
+
+/* ================= MAIN ================= */
+.trips-page .main {
+    border: 2px solid var(--dark-color);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-/* variables (STANDARDIZED COLORS) */
-:root {
-    --primary-color: rgb(183, 168, 216);
-    --secondary-color: rgb(230, 195, 106);
-    --light-color: rgb(255, 255, 255);
-    --dark-color: rgb(0, 0, 0);
-    --hover-color: rgb(211, 211, 211);
-    --background-light: rgb(245, 245, 245);
+/* ================= HERO ================= */
+.trips-page .hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
 }
 
-/* global */
-body {
-    font-family: Arial, sans-serif;
-    color: var(--dark-color);
+/* BACKGROUND IMAGE */
+.trips-page .hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* header */
+/* DARK OVERLAY */
+.trips-page .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* HERO CONTENT (CENTERED) */
+.trips-page .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* HERO TEXT */
+.trips-page .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.trips-page .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* ACTION AREA */
+.trips-page .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* BUTTON BLOCK */
+.trips-page .action h3 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.trips-page .action button {
+    background-color: #e6c36a;
+    color: black;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trips-page .action button:hover {
+    background-color: var(--hover-color);
+}
+
+/* ================= BOOKING ================= */
+.trips-page .booking {
+    padding: 2rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+.trips-page .booking h2 {
+    margin-bottom: 1rem;
+}
+
+/* FORM */
+.trips-page .booking-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* INPUTS */
+.trips-page .booking-form input {
+    padding: 0.6rem;
+    border-radius: 10px;
+    border: 2px solid var(--dark-color);
+    width: 180px;
+}
+
+/* BUTTON */
+.trips-page .booking-form button {
+    background-color: #e6c36a;
+    border: 2px solid var(--dark-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.trips-page .booking-form button:hover {
+    background-color: var(--hover-color);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .trips-page .hero {
+        height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .trips-page .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .trips-page .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .trips-page .booking-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trips-page .booking-form input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* ================= HEADER ================= */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -32,7 +159,7 @@ header {
     align-items: center;
 }
 
-/* navigation */
+/* ================= NAVIGATION ================= */
 nav {
     justify-self: right;
 }
@@ -60,31 +187,7 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* headings */
-h1,
-h2,
-h3 {
-    text-align: center;
-}
-
-/* social media */
-.socialmedia {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
-}
-
-/*  */
-
-/* footer */
+/* ================= FOOTER ================= */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -100,11 +203,27 @@ footer p {
     text-align: center;
 }
 
-/* responsive */
-@media (max-width: 768px) {
+/* ================= SOCIAL MEDIA ================= */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
 
-    footer {
-        flex-direction: column;
-        gap: 10px;
-    }
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* variables (STANDARDIZED COLORS) */
+:root {
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
 }

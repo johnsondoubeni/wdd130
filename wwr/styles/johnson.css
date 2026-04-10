@@ -1,0 +1,259 @@
+/* ================= GLOBAL / BASE ================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
+    --dark-green: #2f4f4f;
+    --border: 2px solid black;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--dark-color);
+}
+
+/* HEADER */
+header {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+nav {
+    justify-self: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    border: 2px solid var(--dark-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* ================= HOME ================= */
+
+.main {
+    border: 2px solid var(--dark-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* IMAGE SECTION */
+.image-section {
+    padding: 3rem;
+    background: var(--background-light);
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 24%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BENEFITS / FEATURES */
+.benefits,
+.features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* ================= ABOUT ================= */
+
+.about-page {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-page .hero {
+    margin-top: 10px;
+}
+
+.about-page .hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background: var(--dark-green);
+    color: white;
+}
+
+.about-page .history,
+.about-page .adventure {
+    margin: 20px;
+    padding: 20px;
+}
+
+.about-page .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* ================= TRIPS ================= */
+
+.trips-page .hero {
+    height: 500px;
+}
+
+.trips-page .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trips-page .booking {
+    padding: 2rem;
+    background: #eee;
+}
+
+.trips-page .booking-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-page .contact-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-page .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-page .team {
+    margin: 20px;
+    padding: 20px;
+    border: var(--border);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .contact-page .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
