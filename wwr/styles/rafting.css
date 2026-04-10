@@ -18,9 +18,9 @@ body {
     color: var(--dark-color);
 }
 
-/* ================================
+/* 
    HEADER (HTML: header → img → nav)
-================================ */
+ */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -59,26 +59,26 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* ================================
-   HEADINGS (used across sections)
-================================ */
+/* 
+   HEADINGS (I am using this across sections)
+ */
 h1,
 h2,
 h3 {
     text-align: center;
 }
 
-/* ================================
+/* 
    CONTACT HEADER SECTION
-================================ */
+ */
 .contact-header {
     text-align: center;
     padding: 20px;
 }
 
-/* ================================
+/* 
    CONTACT CONTENT SECTION
-================================ */
+ */
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,8 +110,8 @@ h3 {
     height: 100px;
 }
 
-/* RADIO BUTTON ALIGNMENT FIX */
-/* RADIO BUTTON ALIGNMENT FIX */
+/* RADIO BUTTON ALIGNMENT  */
+
 .contact-form input[type="radio"] {
     margin-right: 6px;
 }
@@ -123,9 +123,9 @@ h3 {
     margin-right: 15px;
 }
 
-/* ================================
+/* 
    TEAM SECTION
-================================ */
+ */
 .team {
     margin: 20px;
     border: 2px solid var(--dark-color);
@@ -144,9 +144,9 @@ h3 {
     height: 100px;
 }
 
-/* ================================
+/* 
    FOOTER (HTML: footer → p → nav.socialmedia)
-================================ */
+ */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -177,9 +177,9 @@ footer p {
     width: 35px;
 }
 
-/* ================================
+/* 
    RESPONSIVE
-================================ */
+ */
 @media (max-width: 768px) {
 
     header {
