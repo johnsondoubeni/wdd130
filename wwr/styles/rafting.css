@@ -211,7 +211,9 @@ footer p {
     text-align: center;
 }
 
-/* ================= SOCIAL MEDIA ================= */
+/* =================
+ SOCIAL MEDIA 
+ ================= */
 .socialmedia {
     display: flex;
     gap: 10px;
