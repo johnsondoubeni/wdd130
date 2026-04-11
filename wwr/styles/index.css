@@ -140,7 +140,9 @@ HERO ================= */
     margin-bottom: var(--space-md);
 }
 
-/* ================= ACTION AREA ================= */
+/* ================= 
+ACTION AREA 
+================= */
 .hero-actions {
     display: flex;
     justify-content: center;
@@ -166,12 +168,14 @@ HERO ================= */
     text-decoration: none;
 }
 
-/* ================= SECTIONS ================= */
+/* ================= 
+SECTIONS ================= */
 section {
     padding: var(--space-xl) 0;
 }
 
-/* ================= IMAGE SECTION ================= */
+/* ================= 
+IMAGE SECTION ================= */
 .image-section {
     text-align: center;
 }
@@ -205,7 +209,8 @@ IMAGE SECTION GRID
     font-size: 0.9rem;
 }
 
-/* ================= BENEFITS ================= */
+/* ================= 
+BENEFITS ================= */
 .benefits {
     display: flex;
     gap: var(--space-md);
@@ -219,7 +224,8 @@ IMAGE SECTION GRID
     text-align: center;
 }
 
-/* ================= FEATURES ================= */
+/* ================= 
+FEATURES ================= */
 .features {
     display: flex;
     gap: var(--space-md);
@@ -233,13 +239,15 @@ IMAGE SECTION GRID
     text-align: center;
 }
 
-/* ================= TESTIMONIALS ================= */
+/* ================= 
+TESTIMONIALS ================= */
 .testimonials {
     background: var(--background-light);
     text-align: center;
 }
 
-/* ================= SIGNUP ================= */
+/* =================
+ SIGNUP ================= */
 .signup {
     background: var(--secondary-color);
     text-align: center;
@@ -257,7 +265,8 @@ IMAGE SECTION GRID
     border: none;
 }
 
-/* ================= FOOTER ================= */
+/* ================= 
+FOOTER ================= */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -273,7 +282,8 @@ footer p {
     text-align: center;
 }
 
-/* ================= SOCIAL MEDIA ================= */
+/* ================= 
+SOCIAL MEDIA ================= */
 .socialmedia {
     display: flex;
     gap: 10px;
