@@ -30,33 +30,85 @@
     border: 0;
 }
 
-/* FORM */
+/* ================= FORM ================= */
 .contact-page .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
+/* INPUTS */
 .contact-page .contact-form input,
 .contact-page .contact-form textarea {
     padding: 8px;
     border: 1px solid rgb(204, 204, 204);
 }
 
+/* TEXTAREA */
 .contact-page .contact-form textarea {
     height: 100px;
 }
 
-/* RADIO */
-.contact-page .contact-form input[type="radio"] {
-    margin-right: 6px;
+/* ================= NAME + EMAIL ================= */
+
+.contact-page .contact-form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.contact-page label[for="general"],
-.contact-page label[for="reservation"],
-.contact-page label[for="suggestion"] {
-    display: inline;
-    margin-right: 15px;
+.contact-page .contact-form .form-row label {
+    width: 120px;
+    font-size: 1.1rem;
+}
+
+.contact-page .contact-form .form-row input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ================= RADIO (FIXED) ================= */
+
+.contact-page .contact-form .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-page .contact-form .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.contact-page .contact-form .radio-group input[type="radio"] {
+    margin: 0;
+}
+
+/* ================= BUTTON ================= */
+.contact-page .contact-form button {
+    display: block;
+    width: 35%;
+    margin: 15px auto 0;
+
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: none;
+
+    padding: 10px;
+    border-radius: 25px;
+
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-page .contact-form button:hover {
+    background-color: var(--hover-color);
 }
 
 /* TEAM */
@@ -82,7 +134,7 @@
     height: 100px;
 }
 
-/* RESPONSIVE */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
     .contact-page .contact-content {
@@ -91,6 +143,16 @@
 
     .contact-page .team-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* STACK FORM ON MOBILE */
+    .contact-page .contact-form .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-page .contact-form .form-row input {
+        width: 100%;
     }
 }
 

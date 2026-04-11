@@ -11,14 +11,18 @@
     --background-light: rgb(245, 245, 245);
 }
 
-/* ================= MAIN ================= */
+/* ================= 
+MAIN 
+================= */
 .trips-page .main {
     border: 2px solid var(--dark-color);
     border-radius: 20px;
     overflow: hidden;
 }
 
-/* ================= HERO ================= */
+/* =================
+ HERO 
+ ================= */
 .trips-page .hero {
     position: relative;
     height: 500px;
@@ -91,7 +95,9 @@
     background-color: var(--hover-color);
 }
 
-/* ================= BOOKING ================= */
+/* ================= 
+BOOKING 
+================= */
 .trips-page .booking {
     padding: 2rem;
     background-color: #eee;
@@ -131,7 +137,9 @@
     background-color: var(--hover-color);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= 
+RESPONSIVE 
+================= */
 @media (max-width: 768px) {
 
     .trips-page .hero {
@@ -159,7 +167,9 @@
     }
 }
 
-/* ================= HEADER ================= */
+/* ================= 
+HEADER 
+================= */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -170,7 +180,9 @@ header {
     align-items: center;
 }
 
-/* ================= NAVIGATION ================= */
+/* ================= 
+NAVIGATION 
+================= */
 nav {
     justify-self: right;
 }
@@ -198,7 +210,9 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* ================= FOOTER ================= */
+/* =================
+ FOOTER
+  ================= */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -214,7 +228,9 @@ footer p {
     text-align: center;
 }
 
-/* ================= SOCIAL MEDIA ================= */
+/* ================= 
+SOCIAL MEDIA 
+================= */
 .socialmedia {
     display: flex;
     gap: 10px;
@@ -227,4 +243,86 @@ footer p {
 
 .socialmedia img {
     width: 35px;
+}
+
+/* ================= 
+CTA SECTION 
+================= */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+    margin: 40px 0;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+/* ================= 
+TRIPS GRID 
+================= */
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+/* TRIP CARD */
+.trip-card {
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid var(--dark-color);
+}
+
+/* ================= 
+TRIP TABLE 
+================= */
+.trip-table {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 2px solid var(--dark-color);
+    padding: 10px;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+}
+
+.cta-contact-btn {
+    display: inline-block;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border: 2px solid var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.cta-contact-btn:hover {
+    transform: scale(1.05);
+    background-color: var(--hover-color);
 }

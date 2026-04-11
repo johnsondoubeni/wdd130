@@ -1,4 +1,6 @@
-/* ================= GLOBAL RESET ================= */
+/* ================= 
+GLOBAL RESET 
+================= */
 *,
 *::before,
 *::after {
@@ -7,7 +9,9 @@
     padding: 0;
 }
 
-/* ================= VARIABLES ================= */
+/* ================= 
+VARIABLES 
+================= */
 :root {
     --primary-color: rgb(183, 168, 216);
     --secondary-color: rgb(230, 195, 106);
@@ -24,7 +28,9 @@
     --space-xl: 96px;
 }
 
-/* ================= GLOBAL ================= */
+/* ================= 
+GLOBAL 
+================= */
 body {
     font-family: Arial, sans-serif;
     color: var(--dark-color);
@@ -44,7 +50,8 @@ img {
     padding-right: var(--space-sm);
 }
 
-/* ================= HEADER (RESTORED) ================= */
+/* ================= HEADER AS I DID BEFORE TO CHECK
+ ================= */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -83,7 +90,8 @@ nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* ================= HERO ================= */
+/* ================= 
+HERO ================= */
 .hero {
     position: relative;
     width: 100%;
@@ -165,20 +173,36 @@ section {
 
 /* ================= IMAGE SECTION ================= */
 .image-section {
-    background: var(--background-light);
     text-align: center;
 }
 
+/* ================= 
+IMAGE SECTION GRID 
+================= */
 .image-container {
-    display: flex;
-    gap: var(--space-sm);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
+/* EACH ITEM */
+.image-container figure {
+    text-align: center;
+}
+
+/* IMAGE */
 .image-container img {
     width: 100%;
-    max-width: 25%;
     height: 180px;
     object-fit: cover;
+    border: var(--border);
+}
+
+/* CAPTION */
+.image-container figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
 }
 
 /* ================= BENEFITS ================= */
@@ -262,4 +286,61 @@ footer p {
 
 .socialmedia img {
     width: 35px;
+}
+
+/* ====== */
+/* ================= 
+HOME CTA 
+================= */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+    margin: 40px 0;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+/* ================= 
+HOME GRID 
+================= */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.home-grid img {
+    width: 100%;
+    height: auto;
+    border: var(--border);
+}
+
+/* ================= 
+SIGNUP IMPROVEMENT 
+================= */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-form input {
+    padding: 10px;
+    width: 250px;
+}
+
+.signup-form button {
+    padding: 10px 20px;
+    background: var(--dark-color);
+    color: var(--light-color);
+    border: none;
 }

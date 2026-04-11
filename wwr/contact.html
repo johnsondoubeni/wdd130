@@ -20,7 +20,6 @@
     <header>
         <img src="images/logo.jpg" alt="rafting-company" width="100">
 
-
         <nav aria-label="Main Navigation">
             <nav>
                 <ul>
@@ -32,6 +31,7 @@
             </nav>
         </nav>
     </header>
+
     <main>
 
         <!-- CONTACT HEADER -->
@@ -56,34 +56,41 @@
             <!-- FORM -->
             <form class="contact-form">
 
-                <!-- TEXT INPUT -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your full name please"
-                  required>
+                <!-- NAME -->
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name please"
+                      required>
+                </div>
 
-                <!-- EMAIL INPUT -->
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email please"
-                  required>
+                <!--EMAIL -->
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email please"
+                      required>
+                </div>
 
                 <!-- RADIO BUTTONS -->
-                <p>Please, click on the on the option per purpose below, and write us using the
-                    text-box:</p>
+                <div class="form-row">
+                    <label>Message Purpose</label>
 
-                <label for="general">
-                    <input type="radio" id="general" name="purpose" value="general" required>
-                    General Inquiry
-                </label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
 
-                <label for="reservation">
-                    <input type="radio" id="reservation" name="purpose" value="reservation">
-                    Reservation Question
-                </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
 
-                <label for="suggestion">
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                    Website Suggestion
-                </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </div>
 
                 <!-- TEXTAREA -->
                 <label for="message">Message</label>
@@ -99,7 +106,6 @@
                 <button type="submit">Get in Touch!</button>
 
             </form>
-
 
         </section>
 
@@ -131,13 +137,19 @@
 
     <footer>
         <p>&copy; 2026 JohnsonDoubeni Ltd | Johnson Doubeni</p>
-        <nav class="socialmedia"> <a href="https://www.facebook.com" target="_blank"
-              rel="noopener noreferrer"> <img src="images/facebook.png" alt="Facebook"> </a> <a
-              href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"> <img
-                  src="images/twitter.png" alt="Twitter"> </a> <a href="https://www.instagram.com"
-              target="_blank" rel="noopener noreferrer"> <img src="images/instagram.png"
-                  alt="Instagram"> </a> </nav>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
     </footer>
+
 </body>
 
 </html>
