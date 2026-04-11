@@ -1,4 +1,15 @@
-/* ================= TRIPS PAGE ================= */
+/* =================
+ TRIPS PAGE 
+ ================= */
+/* variables (STANDARDIZED COLORS) */
+:root {
+    --primary-color: rgb(183, 168, 216);
+    --secondary-color: rgb(230, 195, 106);
+    --light-color: rgb(255, 255, 255);
+    --dark-color: rgb(0, 0, 0);
+    --hover-color: rgb(211, 211, 211);
+    --background-light: rgb(245, 245, 245);
+}
 
 /* ================= MAIN ================= */
 .trips-page .main {
@@ -216,14 +227,4 @@ footer p {
 
 .socialmedia img {
     width: 35px;
-}
-
-/* variables (STANDARDIZED COLORS) */
-:root {
-    --primary-color: rgb(183, 168, 216);
-    --secondary-color: rgb(230, 195, 106);
-    --light-color: rgb(255, 255, 255);
-    --dark-color: rgb(0, 0, 0);
-    --hover-color: rgb(211, 211, 211);
-    --background-light: rgb(245, 245, 245);
 }
