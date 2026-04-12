@@ -1,5 +1,5 @@
-/* ================= CONTACT PAGE ================= */
-/* variables (STANDARDIZED COLORS) */
+/* ================= VARIABLES ================= */
+/* Used globally */
 :root {
     --primary-color: rgb(183, 168, 216);
     --secondary-color: rgb(230, 195, 106);
@@ -9,13 +9,60 @@
     --background-light: rgb(245, 245, 245);
 }
 
-/* CONTACT HEADER */
+/* ===================================================== */
+/* ================= HEADER (HTML: <header>) ============ */
+/* ===================================================== */
+header {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+/* ================= NAVIGATION ================= */
+nav {
+    justify-self: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+nav ul li a:hover {
+    background-color: var(--hover-color);
+}
+
+/* ===================================================== */
+/* ================= MAIN → CONTACT HEADER ============== */
+/* HTML: <section class="contact-header"> */
+/* ===================================================== */
 .contact-page .contact-header {
     text-align: center;
     padding: 20px;
 }
 
-/* CONTACT CONTENT */
+/* ===================================================== */
+/* ================= MAIN → CONTACT CONTENT ============= */
+/* HTML: <section class="contact-content"> */
+/* ===================================================== */
 .contact-page .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,14 +70,18 @@
     padding: 20px;
 }
 
-/* MAP */
+/* ================= MAP ================= */
+/* HTML: .map iframe */
 .contact-page .map iframe {
     width: 100%;
     height: 450px;
     border: 0;
 }
 
-/* ================= FORM ================= */
+/* ===================================================== */
+/* ================= FORM =============================== */
+/* HTML: <form class="contact-form"> */
+/* ===================================================== */
 .contact-page .contact-form {
     display: flex;
     flex-direction: column;
@@ -50,7 +101,6 @@
 }
 
 /* ================= NAME + EMAIL ================= */
-
 .contact-page .contact-form .form-row {
     display: flex;
     align-items: center;
@@ -70,8 +120,7 @@
     font-size: 1rem;
 }
 
-/* ================= RADIO (FIXED) ================= */
-
+/* ================= RADIO ================= */
 .contact-page .contact-form .radio-group {
     display: flex;
     flex-direction: column;
@@ -111,7 +160,10 @@
     background-color: var(--hover-color);
 }
 
-/* TEAM */
+/* ===================================================== */
+/* ================= MAIN → TEAM ======================== */
+/* HTML: <section class="team"> */
+/* ===================================================== */
 .contact-page .team {
     margin: 20px;
     border: 2px solid var(--dark-color);
@@ -134,7 +186,42 @@
     height: 100px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ===================================================== */
+/* ================= FOOTER ============================= */
+/* ===================================================== */
+footer {
+    background-color: var(--primary-color);
+    border: 1px solid var(--dark-color);
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    flex: 1;
+    text-align: center;
+}
+
+/* ================= SOCIAL MEDIA ================= */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+}
+
+/* ===================================================== */
+/* ================= RESPONSIVE ========================= */
+/* ===================================================== */
 @media (max-width: 768px) {
 
     .contact-page .contact-content {
@@ -154,76 +241,4 @@
     .contact-page .contact-form .form-row input {
         width: 100%;
     }
-}
-
-/* ================= HEADER ================= */
-header {
-    background-color: var(--primary-color);
-    border: 1px solid var(--dark-color);
-    padding: 20px;
-
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
-
-/* ================= NAVIGATION ================= */
-nav {
-    justify-self: right;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark-color);
-    font-weight: bold;
-}
-
-nav ul li a {
-    display: inline-block;
-    background-color: var(--light-color);
-    padding: 10px 20px;
-    border: 2px solid var(--dark-color);
-    color: var(--dark-color);
-}
-
-nav ul li a:hover {
-    background-color: var(--hover-color);
-}
-
-/* ================= FOOTER ================= */
-footer {
-    background-color: var(--primary-color);
-    border: 1px solid var(--dark-color);
-    padding: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer p {
-    flex: 1;
-    text-align: center;
-}
-
-/* =================
- SOCIAL MEDIA 
- ================= */
-.socialmedia {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 35px;
 }

@@ -1,9 +1,14 @@
+/* ================= GLOBAL ================= */
+/* Applies to entire page */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===================================================== */
+/* ================= HEADER (HTML: <header>) ============ */
+/* ===================================================== */
 header {
     background-color: rgba(114, 95, 239, 0.8);
     color: #fff;
@@ -14,6 +19,8 @@ header {
     align-content: center;
 }
 
+/* ================= NAVIGATION ================= */
+/* Inside header */
 nav {
     background-color: steelblue;
     padding: 1rem;
@@ -46,11 +53,22 @@ nav a {
     color: rgb(247, 243, 249);
 }
 
-h1 {
-    color: steelblue;
-    padding: .5rem
+/* ===================================================== */
+/* ================= GRID LAYOUT ======================== */
+/* HTML: <div class="grid"> */
+/* ===================================================== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* ===================================================== */
+/* ================= ASIDE ============================== */
+/* HTML: <aside> */
+/* ===================================================== */
 aside {
     width: 40px;
     height: 80px;
@@ -98,12 +116,32 @@ aside p {
     text-align: justify;
 }
 
-/* the main image */
+/* FIX ASIDE SIZE (OVERRIDES EARLIER RULES) */
+aside {
+    width: 100%;
+    height: auto;
+}
+
+/* ===================================================== */
+/* ================= MAIN =============================== */
+/* HTML: <main> */
+/* ===================================================== */
 main {
 
     max-width: 750px;
     margin: 20px;
 
+}
+
+/* FIX MAIN INSIDE GRID */
+main {
+    max-width: 100%;
+}
+
+/* ================= HEADINGS & TEXT ================= */
+h1 {
+    color: steelblue;
+    padding: .5rem
 }
 
 h1 {
@@ -116,6 +154,7 @@ p {
     padding: .5px;
 }
 
+/* MAIN IMAGE */
 main img {
     width: 150px;
     height: auto;
@@ -126,35 +165,16 @@ main img {
     margin: 0 0 1rem 2%;
 }
 
-/* class selectors */
-
+/* ================= CLASS SELECTORS ================= */
 .box {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .2);
 
 }
 
-/* GRID LAYOUT */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* FIX MAIN INSIDE GRID */
-main {
-    max-width: 100%;
-}
-
-/* FIX ASIDE SIZE (OVERRIDES EARLIER RULES) */
-aside {
-    width: 100%;
-    height: auto;
-}
-
-/* CENTER FOOTER TEXT */
+/* ===================================================== */
+/* ================= FOOTER ============================= */
+/* ===================================================== */
 footer {
     display: flex;
     align-items: center;

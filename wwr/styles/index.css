@@ -1,6 +1,5 @@
-/* ================= 
-GLOBAL RESET 
-================= */
+/* ================= GLOBAL RESET ================= */
+/* Resets browser default spacing and ensures consistent box sizing */
 *,
 *::before,
 *::after {
@@ -9,9 +8,8 @@ GLOBAL RESET
     padding: 0;
 }
 
-/* ================= 
-VARIABLES 
-================= */
+/* ================= VARIABLES ================= */
+/* Central place for colors, spacing, and reusable values */
 :root {
     --primary-color: rgb(183, 168, 216);
     --secondary-color: rgb(230, 195, 106);
@@ -28,21 +26,22 @@ VARIABLES
     --space-xl: 96px;
 }
 
-/* ================= 
-GLOBAL 
-================= */
+/* ================= GLOBAL ================= */
+/* Base styling applied to entire page */
 body {
     font-family: Arial, sans-serif;
     color: var(--dark-color);
     line-height: 1.6;
 }
 
+/* Ensures images scale properly */
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* ================= CONTAINER ================= */
+/* Centers content and limits width */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -50,8 +49,8 @@ img {
     padding-right: var(--space-sm);
 }
 
-/* ================= HEADER AS I DID BEFORE TO CHECK
- ================= */
+/* ================= HEADER ================= */
+/* Matches <header> — layout for logo + nav */
 header {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -63,21 +62,25 @@ header {
 }
 
 /* NAVIGATION */
+/* Positions nav to the right side */
 nav {
     justify-self: right;
 }
 
+/* Horizontal menu layout */
 nav ul {
     list-style: none;
     display: flex;
 }
 
+/* Base link styling */
 nav a {
     text-decoration: none;
     color: var(--dark-color);
     font-weight: bold;
 }
 
+/* Button-like nav links */
 nav ul li a {
     display: inline-block;
     background-color: var(--light-color);
@@ -86,12 +89,13 @@ nav ul li a {
     color: var(--dark-color);
 }
 
+/* Hover interaction */
 nav ul li a:hover {
     background-color: var(--hover-color);
 }
 
-/* ================= 
-HERO ================= */
+/* ================= HERO ================= */
+/* Large banner section with layered content */
 .hero {
     position: relative;
     width: 100%;
@@ -100,6 +104,7 @@ HERO ================= */
     overflow: hidden;
 }
 
+/* Background image fills hero */
 .hero-bg {
     position: absolute;
     inset: 0;
@@ -108,6 +113,7 @@ HERO ================= */
     object-fit: cover;
 }
 
+/* Dark overlay for text readability */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -116,6 +122,7 @@ HERO ================= */
             rgba(0, 0, 0, 0.75));
 }
 
+/* Centered hero text content */
 .hero-content {
     position: relative;
     z-index: 2;
@@ -130,25 +137,27 @@ HERO ================= */
     padding: var(--space-sm);
 }
 
+/* Main headline */
 .hero-content h1 {
     font-size: 2.8rem;
     margin-bottom: var(--space-sm);
 }
 
+/* Supporting text */
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: var(--space-md);
 }
 
-/* ================= 
-ACTION AREA 
-================= */
+/* ================= ACTION AREA ================= */
+/* Buttons inside hero */
 .hero-actions {
     display: flex;
     justify-content: center;
     gap: var(--space-sm);
 }
 
+/* Primary call-to-action button */
 .primary-btn {
     background: linear-gradient(45deg,
             rgb(230, 195, 106),
@@ -160,6 +169,7 @@ ACTION AREA
     font-weight: 600;
 }
 
+/* Secondary button */
 .secondary-btn {
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -168,21 +178,19 @@ ACTION AREA
     text-decoration: none;
 }
 
-/* ================= 
-SECTIONS ================= */
+/* ================= SECTIONS ================= */
+/* Applies spacing to all <section> elements */
 section {
     padding: var(--space-xl) 0;
 }
 
-/* ================= 
-IMAGE SECTION ================= */
+/* ================= IMAGE SECTION ================= */
+/* Matches .image-section */
 .image-section {
     text-align: center;
 }
 
-/* ================= 
-IMAGE SECTION GRID 
-================= */
+/* Grid layout for images */
 .image-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -190,12 +198,12 @@ IMAGE SECTION GRID
     margin-top: 20px;
 }
 
-/* EACH ITEM */
+/* Individual image blocks */
 .image-container figure {
     text-align: center;
 }
 
-/* IMAGE */
+/* Image styling */
 .image-container img {
     width: 100%;
     height: 180px;
@@ -203,20 +211,21 @@ IMAGE SECTION GRID
     border: var(--border);
 }
 
-/* CAPTION */
+/* Caption styling */
 .image-container figcaption {
     margin-top: 8px;
     font-size: 0.9rem;
 }
 
-/* ================= 
-BENEFITS ================= */
+/* ================= BENEFITS ================= */
+/* Horizontal card layout */
 .benefits {
     display: flex;
     gap: var(--space-md);
     justify-content: center;
 }
 
+/* Individual benefit card */
 .benefit-card {
     border: 2px solid var(--dark-color);
     padding: var(--space-sm);
@@ -224,14 +233,22 @@ BENEFITS ================= */
     text-align: center;
 }
 
-/* ================= 
-FEATURES ================= */
+/* ================= TESTIMONIALS ================= */
+/* Highlight section with background */
+.testimonials {
+    background: var(--background-light);
+    text-align: center;
+}
+
+/* ================= FEATURES ================= */
+/* Same layout as benefits for consistency */
 .features {
     display: flex;
     gap: var(--space-md);
     justify-content: center;
 }
 
+/* Feature card styling */
 .feature-card {
     border: 2px solid var(--dark-color);
     padding: var(--space-sm);
@@ -239,34 +256,37 @@ FEATURES ================= */
     text-align: center;
 }
 
-/* ================= 
-TESTIMONIALS ================= */
-.testimonials {
-    background: var(--background-light);
-    text-align: center;
-}
-
-/* =================
- SIGNUP ================= */
+/* ================= SIGNUP ================= */
+/* Call-to-action section */
 .signup {
     background: var(--secondary-color);
     text-align: center;
 }
 
+/* Form layout (vertical stacking) */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input styling */
 .signup-form input {
     padding: 10px;
     width: 250px;
 }
 
+/* Button styling */
 .signup-form button {
     padding: 10px 20px;
     background: var(--dark-color);
-    color: rgb(255, 255, 255);
+    color: var(--light-color);
     border: none;
 }
 
-/* ================= 
-FOOTER ================= */
+/* ================= FOOTER ================= */
+/* Matches <footer> layout */
 footer {
     background-color: var(--primary-color);
     border: 1px solid var(--dark-color);
@@ -277,13 +297,14 @@ footer {
     justify-content: space-between;
 }
 
+/* Centered footer text */
 footer p {
     flex: 1;
     text-align: center;
 }
 
-/* ================= 
-SOCIAL MEDIA ================= */
+/* ================= SOCIAL MEDIA ================= */
+/* Aligns icons horizontally */
 .socialmedia {
     display: flex;
     gap: 10px;
@@ -294,14 +315,15 @@ SOCIAL MEDIA ================= */
     text-decoration: none;
 }
 
+/* Icon sizing */
 .socialmedia img {
     width: 35px;
 }
 
-/* ====== */
-/* ================= 
-HOME CTA 
-================= */
+/* ================= UNUSED (NOT IN HTML) ================= */
+/* Extra sections kept for future use */
+
+/* CTA section */
 .cta {
     text-align: center;
     padding: 40px 20px;
@@ -317,9 +339,7 @@ HOME CTA
     margin-bottom: 20px;
 }
 
-/* ================= 
-HOME GRID 
-================= */
+/* Grid layout for homepage */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,26 +351,4 @@ HOME GRID
     width: 100%;
     height: auto;
     border: var(--border);
-}
-
-/* ================= 
-SIGNUP IMPROVEMENT 
-================= */
-.signup-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.signup-form input {
-    padding: 10px;
-    width: 250px;
-}
-
-.signup-form button {
-    padding: 10px 20px;
-    background: var(--dark-color);
-    color: var(--light-color);
-    border: none;
 }
