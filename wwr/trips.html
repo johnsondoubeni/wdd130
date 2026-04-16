@@ -5,82 +5,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--  META -->
     <meta name="description"
       content="Explore exciting white water rafting trips, from family-friendly floats to extreme adventures. Book your next trip today.">
     <meta name="author" content="Johnson Doubeni">
 
-    <!-- TITLE -->
     <title>Trips | White Water Rafting Company</title>
 
-    <link rel="stylesheet" href="styles/trips.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="trips-page">
 
-    <!-- header  -->
-    <header>
+    <!-- HEADER -->
+    <header class="container">
         <img src="images/logo.jpg" alt="rafting-company" width="100">
 
         <nav aria-label="Main Navigation">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- MAIN -->
-    <main class="main">
+    <main class="container">
 
-        <!-- HERO SECTION -->
+        <!-- HERO -->
         <section class="hero">
             <img src="images/rafting-bg.jpg" alt="Rafting Adventure" class="hero-bg">
 
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Fun Season! Time to Take a Trip with White Waters Rafting?</h1>
-                    <p>Book Now! No Regrets, We Assure You!.</p>
-                </div>
+                <h1>Fun Season! Time to Take a Trip with White Water Rafting</h1>
+                <p>Book now and enjoy an unforgettable adventure.</p>
 
                 <div class="hero-actions">
-                    <div class="action">
-                        <h3>Coaching Session</h3>
-                        <button>BOOK NOW</button>
-                    </div>
-
-                    <div class="action">
-                        <h3>Please book for an adventure</h3>
-                        <button>BOOK NOW</button>
-                    </div>
+                    <a href="contact.html" class="primary-btn">Book Now</a>
+                    <a href="contact.html" class="secondary-btn">Get Started</a>
                 </div>
             </div>
         </section>
 
-        <!--  CTA -->
+        <!-- CTA -->
         <section class="cta">
             <h2>Book Your Adventure Now!</h2>
             <p>Ready to experience the thrill? Contact us today to reserve your trip.</p>
             <a href="contact.html" class="cta-contact-btn">Contact Us</a>
         </section>
 
-        <!-- BOOKING SECTION -->
+        <!-- BOOKING -->
         <section class="booking">
             <h2>Online Booking</h2>
 
             <form class="booking-form">
-                <input type="text" placeholder="Choose Your Package">
-                <input type="date">
-                <input type="email" placeholder="Email">
-                <button type="submit">BOOK NOW</button>
+                <label for="package">Insert your package:</label>
+                <input type="text" id="package" name="package" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Book Now</button>
             </form>
         </section>
 
-        <!--  TRIP DESCRIPTIONS -->
+        <!-- TRIPS -->
         <section class="trips">
             <div class="trip-card">
                 <img src="images/raft1.jpg" alt="River Rapids Adventure">
@@ -102,42 +95,47 @@
             </div>
         </section>
 
-        <!-- ADDED TABLE -->
+        <!-- TABLE -->
         <section class="trip-table">
             <h2>Trip Summary</h2>
 
             <table>
-                <tr>
-                    <th>Trip</th>
-                    <th>Duration</th>
-                    <th>Difficulty</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Trip</th>
+                        <th>Duration</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
 
-                <tr>
-                    <td>River Rapids</td>
-                    <td>3 Hours</td>
-                    <td>High</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>River Rapids</td>
+                        <td>3 Hours</td>
+                        <td>High</td>
+                    </tr>
 
-                <tr>
-                    <td>Family Float</td>
-                    <td>2 Hours</td>
-                    <td>Easy</td>
-                </tr>
+                    <tr>
+                        <td>Family Float</td>
+                        <td>2 Hours</td>
+                        <td>Easy</td>
+                    </tr>
 
-                <tr>
-                    <td>Extreme Challenge</td>
-                    <td>5 Hours</td>
-                    <td>Extreme</td>
-                </tr>
+                    <tr>
+                        <td>Extreme Challenge</td>
+                        <td>5 Hours</td>
+                        <td>Extreme</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
 
     </main>
 
-    <!-- footer  -->
-    <footer>
+    <!-- FOOTER -->
+    <footer class="container">
         <p>&copy; 2026 JohnsonDoubeni Ltd | Johnson Doubeni</p>
+
         <nav class="socialmedia">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <img src="images/facebook.png" alt="Facebook">

@@ -10,8 +10,8 @@
 /* ================= HEADER (HTML: <header>) ============ */
 /* ===================================================== */
 header {
-    background-color: rgba(114, 95, 239, 0.8);
-    color: #fff;
+    background-color: rgb(114, 95, 239);
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-align: left;
     font-size: 1.5rem;
@@ -22,18 +22,16 @@ header {
 /* ================= NAVIGATION ================= */
 /* Inside header */
 nav {
-    background-color: steelblue;
+    background-color: rgb(70, 130, 180);
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
-    /* move items to the end */
     align-items: center;
     list-style: none;
 }
 
 nav ul {
     display: flex;
-    /* make li items horizontal */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -41,7 +39,6 @@ nav ul {
 
 nav li {
     margin-left: 20px;
-    /* spacing between items */
 }
 
 nav a {
@@ -55,7 +52,6 @@ nav a {
 
 /* ===================================================== */
 /* ================= GRID LAYOUT ======================== */
-/* HTML: <div class="grid"> */
 /* ===================================================== */
 .grid {
     display: grid;
@@ -67,18 +63,16 @@ nav a {
 
 /* ===================================================== */
 /* ================= ASIDE ============================== */
-/* HTML: <aside> */
 /* ===================================================== */
 aside {
     width: 40px;
     height: 80px;
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 1px solid rgb(0, 0, 0);
     padding: 5px;
-    background-color: #2771fb;
-    color: #000;
+    background-color: rgb(39, 113, 251);
+    color: rgb(0, 0, 0);
     text-align: center;
-
 }
 
 aside img {
@@ -97,12 +91,11 @@ aside {
     width: 20%;
     height: 100%;
     margin: 20px auto;
-    border: 1px solid #000;
+    border: 1px solid rgb(0, 0, 0);
     padding: 5px;
-    background-color: #f4f4f4;
-    color: #000;
+    background-color: rgb(244, 244, 244);
+    color: rgb(0, 0, 0);
     text-align: center;
-
 }
 
 aside img {
@@ -116,7 +109,7 @@ aside p {
     text-align: justify;
 }
 
-/* FIX ASIDE SIZE (OVERRIDES EARLIER RULES) */
+/* ASIDE SIZE*/
 aside {
     width: 100%;
     height: auto;
@@ -124,28 +117,19 @@ aside {
 
 /* ===================================================== */
 /* ================= MAIN =============================== */
-/* HTML: <main> */
 /* ===================================================== */
-main {
-
-    max-width: 750px;
-    margin: 20px;
-
-}
-
-/* FIX MAIN INSIDE GRID */
 main {
     max-width: 100%;
 }
 
 /* ================= HEADINGS & TEXT ================= */
 h1 {
-    color: steelblue;
-    padding: .5rem
+    color: rgb(70, 130, 180);
+    padding: .5rem;
 }
 
 h1 {
-    color: #2edb90;
+    color: rgb(46, 219, 144);
 }
 
 p {
@@ -158,7 +142,7 @@ p {
 main img {
     width: 150px;
     height: auto;
-    border: 2px solid #338edd;
+    border: 2px solid rgb(51, 142, 221);
     padding: 5px;
     box-shadow: 2px 2px 5px rgb(177, 226, 243);
     float: right;
@@ -168,8 +152,7 @@ main img {
 /* ================= CLASS SELECTORS ================= */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .2);
-
+    border: 1px solid rgb(0, 0, 0);
 }
 
 /* ===================================================== */
@@ -178,7 +161,5 @@ main img {
 footer {
     display: flex;
     align-items: center;
-    /* vertical alignment */
     justify-content: center;
-    /* horizontal alignment */
 }
